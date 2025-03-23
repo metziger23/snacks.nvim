@@ -61,6 +61,7 @@ local M = {}
 ---@field input? snacks.win.Config|{} input window config
 ---@field list? snacks.win.Config|{} result list window config
 ---@field preview? snacks.win.Config|{} preview window config
+---@field pick_win_chars? string pick_win_chars window config
 
 ---@class snacks.picker.Config
 ---@field multi? (string|snacks.picker.Config)[]
@@ -316,6 +317,7 @@ local defaults = {
         ["<a-w>"] = "cycle_win",
       },
     },
+    pick_win_chars = "asdfghjkl",
   },
   ---@class snacks.picker.icons
     -- stylua: ignore

@@ -387,7 +387,7 @@ function M.pick_win(opts)
   }, opts)
 
   local overlays = {} ---@type snacks.win[]
-  local chars = "asdfghjkl"
+  local chars = Snacks.picker.config.get().win.pick_win_chars
   local wins = {} ---@type number[]
   for _, win in ipairs(vim.api.nvim_tabpage_list_wins(0)) do
     local buf = vim.api.nvim_win_get_buf(win)
